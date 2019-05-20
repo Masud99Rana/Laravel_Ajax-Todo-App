@@ -22,3 +22,13 @@ Route::resource('post','PostController');
 Route::POST('addPost','PostController@addPost');
 Route::POST('editPost','PostController@editPost');
 Route::POST('deletePost','PostController@deletePost');
+
+
+// Todo App
+// See http://prntscr.com/nqr748
+Route::get('list', 'ListController@index');
+Route::post('list', 'ListController@create');
+Route::post('delete', 'ListController@delete');
+Route::post('update', 'ListController@update');
+//auto complete
+Route::get('search', 'ListController@search');
